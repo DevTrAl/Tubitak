@@ -16,33 +16,22 @@
           }
       }
       const words1 = [
-        { word: "Otağ", description: "Ailenin yaşadığı büyük çadır, evin merkezi." },
-        { word: "Ev", description: "Yuva, aile bireylerinin yaşadığı yer. Türklerde ev ve aile sıkça eş anlamlı kullanılmıştır." },
-        { word: "Aile", description: "Çekirdek aileyi ifade eder. Divan’da bu kelime açıkça geçmez, ancak aile kavramı başka terimlerle ifade edilmiştir." },
-        { word: "Uluğ", description: "Büyük, ailenin büyüğü (genelde dede veya baba)." },
-        { word: "Eçe", description: "Anne, evin kadını." },
-        { word: "Oğul", description: "Ailenin erkek çocuğu." },
-                        
+        { word: "Aş Tanrı", description: "Eski Türklerde, yemeklerin bolluğunu ve bereketini sağlayan manevi güç." },
+        { word: "Tengri Aş", description: "Gökyüzü Tanrısı’nın kutsadığı yiyecek, kutsal kabul edilen yemekler." },
+        { word: "Kut Aşı", description: "Tanrı’dan gelen bereketle pişirilen yiyecek, kutsal yemek." },           
           ];
       
           const words2 = [
-          { word: "Kız", description: "Ailenin kız çocuğu." },
-        { word: "Ata", description: "Baba veya dede; ailenin reisi." },
-        { word: "Ana", description: "Anne. Türklerde ailede önemli bir yer tutar." },
-        { word: "Karı", description: "Kadın, eş anlamında kullanılır." },
-        { word: "Er", description: "Erkek, koca veya aile reisi." },
-        { word: "Evlü", description: "Evli, aile kurmuş kişi anlamına gelir." },
-        { word: "Uruk", description: "Soy, nesil, aileden gelen kişiler." },
+            { word: "Aş İmanı", description: "Türklerin yemek ve sofralarına duyduğu saygı ve minnettarlık duygusu." },
+            { word: "Beylik Çorbası", description: "Liderlere sunulan, özel törenlerde hazırlanan çorba." },
+            { word: "Kara Aş", description: "Kötü dönemlerde, kıtlık zamanlarında yapılan basit yemekler." },
                         
           ];
         const words3 = [
-        { word: "Budun", description: "Kabile, ailelerin birleşiminden oluşan topluluk." },
-        { word: "Töre", description: "Aile içindeki düzeni ve ilişkileri belirleyen gelenek ve kurallar." },
-        { word: "Köngül", description: "Sevgi, aile içindeki bağlılığı ve duygusal bağı ifade eder." },
-        { word: "İnik", description: "Küçük kardeş ya da aile içindeki küçük birey." },
-        { word: "Kağan", description: "Ailenin lideri veya soyun başındaki kişi (ailelerin birleşimi bağlamında)." },
-        { word: "Yurt", description: "Ailelerin kurduğu yaşam alanı, aynı zamanda memleket anlamı taşır." },
-        { word: "İş", description: "Aile bireylerinin yaptığı işler, genelde ev içindeki görev dağılımını ifade eder." },
+          { word: "Ulu Sofra", description: "Büyük ziyafet sofraları, Tanrı’ya şükran göstermek amacıyla kurulan sofralar." },
+          { word: "Şaman Helvası", description: "Şaman ayinlerinde kullanılan kutsal tatlı veya yiyecek." },
+          { word: "İyilik Yemişi", description: "Erdemli yaşamı simgeleyen, doğal ve sağlıklı yiyecekler." },
+          { word: "Gök Tat", description: "Gökyüzü ile ilişkilendirilen, özel ve değerli kabul edilen tatlar veya yiyecekler." },
           ];
       
           // Kartları oluşturma fonksiyonu
@@ -54,11 +43,12 @@
                   card.classList.add("cardg");
                   card.style.setProperty("--order", index);
       
-            card.setAttribute("data-sound", `/sounds/Aile/${item.word.toLowerCase()}.mp3`);
+            card.setAttribute("data-sound", `sounds/yemek/${item.word.toLowerCase()}.mp3`);
                   // İçerik
                   card.innerHTML = `
                       <h3>${item.word}</h>
                  <p>${item.description}</p>
+                 
                   `;
                   
                   container.appendChild(card);

@@ -15,23 +15,35 @@
               buttonText.textContent = "🔊 Ses Dinle"; // Buton metnini değiştir
           }
       }
+
       const words1 = [
-        { word: "Aş Tanrı", description: "Eski Türklerde, yemeklerin bolluğunu ve bereketini sağlayan manevi güç." },
-        { word: "Tengri Aş", description: "Gökyüzü Tanrısı’nın kutsadığı yiyecek, kutsal kabul edilen yemekler." },
-        { word: "Kut Aşı", description: "Tanrı’dan gelen bereketle pişirilen yiyecek, kutsal yemek." },           
+        { word: "Töre", description: "Gelenek ve göreneklerin genel adı; toplumsal düzeni sağlayan kurallar bütünü." },
+        { word: "Toy", description: "Şölen, ziyafet. Kutlama veya önemli günlerde yapılan geleneksel toplantılar." },
+        { word: "Saçı", description: "Tanrılara veya ruhlara adak olarak sunulan yiyecek veya armağan." },
+        { word: "Yas", description: "Cenaze törenleriyle ilgili gelenek; ölen kişi için tutulan matem." },
+        { word: "Kımız", description: "Törenlerde ve kutlamalarda içilen mayalanmış süt içeceği." },
+        { word: "Küden", description: "Meclis veya kurultay; devlet işlerinin görüşüldüğü geleneksel toplantı." },
+                        
           ];
       
           const words2 = [
-            { word: "Aş İmanı", description: "Türklerin yemek ve sofralarına duyduğu saygı ve minnettarlık duygusu." },
-            { word: "Beylik Çorbası", description: "Liderlere sunulan, özel törenlerde hazırlanan çorba." },
-            { word: "Kara Aş", description: "Kötü dönemlerde, kıtlık zamanlarında yapılan basit yemekler." },
+            { word: "Ongun", description: "Boyların kutsal kabul ettiği semboller; bir nevi totem." },
+            { word: "Yurt", description: "Toprak ve yaşam alanı; geleneksel olarak bir ailenin veya boyun bağlı olduğu yer." },
+            { word: "Balık", description: "Şehir veya yerleşim yeri; genellikle bir boyun geleneksel merkezini ifade eder." },
+            { word: "İye", description: "Koruyucu ruh; Türk inanç sisteminde doğa ve yerin kutsallığına dair bir kavram." },
+            { word: "Otağ", description: "Çadır, özellikle bey veya kağanın çadırı. Türk yaşamındaki önemli bir geleneksel unsur." },
+            { word: "Törüt", description: "Kutlama veya toplumsal ritüeller." },
+            { word: "Şaman", description: "Ruhani lider; dini törenleri ve geleneksel uygulamaları yöneten kişi." },
                         
           ];
         const words3 = [
-          { word: "Ulu Sofra", description: "Büyük ziyafet sofraları, Tanrı’ya şükran göstermek amacıyla kurulan sofralar." },
-          { word: "Şaman Helvası", description: "Şaman ayinlerinde kullanılan kutsal tatlı veya yiyecek." },
-          { word: "İyilik Yemişi", description: "Erdemli yaşamı simgeleyen, doğal ve sağlıklı yiyecekler." },
-          { word: "Gök Tat", description: "Gökyüzü ile ilişkilendirilen, özel ve değerli kabul edilen tatlar veya yiyecekler." },
+          { word: "Barka", description: "Kurban kesme veya adak verme ritüelleri." },
+          { word: "Uruk", description: "Soy, boy veya kabile anlamına gelir; soy bağlarına dayalı gelenekleri ifade eder." },
+          { word: "Budun", description: "Toplum, millet veya halk; bir arada yaşayan insanların geleneklerine vurgu yapar." },
+          { word: "Kut", description: "Devletin veya bireyin ilahi bir güçten aldığı kutsallık. Geleneksel Türk inanç sisteminde önemli bir kavram." },
+          { word: "Köç", description: "Göçebe yaşam tarzıyla ilgili gelenekler." },
+          { word: "Süzük", description: "Eğlence ve şenlik anlamına gelir; sosyal geleneklerle bağlantılıdır." },
+          { word: "Takı", description: "Düğün veya törenlerde gelin ve damada takılan hediyeler." }, 
           ];
       
           // Kartları oluşturma fonksiyonu
@@ -43,12 +55,11 @@
                   card.classList.add("cardg");
                   card.style.setProperty("--order", index);
       
-            card.setAttribute("data-sound", `/sounds/yemek/${item.word.toLowerCase()}.mp3`);
+            card.setAttribute("data-sound", `sounds/gelenek/${item.word.toLowerCase()}.mp3`);
                   // İçerik
                   card.innerHTML = `
                       <h3>${item.word}</h>
                  <p>${item.description}</p>
-                 
                   `;
                   
                   container.appendChild(card);

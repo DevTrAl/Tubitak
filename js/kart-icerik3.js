@@ -15,7 +15,6 @@
               buttonText.textContent = "🔊 Ses Dinle"; // Buton metnini değiştir
           }
       }
-
       const words1 = [
         { word: "Otağ", description: "Ailenin yaşadığı büyük çadır, evin merkezi." },
         { word: "Ev", description: "Yuva, aile bireylerinin yaşadığı yer. Türklerde ev ve aile sıkça eş anlamlı kullanılmıştır." },
@@ -34,7 +33,6 @@
         { word: "Er", description: "Erkek, koca veya aile reisi." },
         { word: "Evlü", description: "Evli, aile kurmuş kişi anlamına gelir." },
         { word: "Uruk", description: "Soy, nesil, aileden gelen kişiler." },
-        { word: "Er", description: "Erkek, koca veya aile reisi." },
                         
           ];
         const words3 = [
@@ -56,11 +54,11 @@
                   card.classList.add("cardg");
                   card.style.setProperty("--order", index);
       
-            card.setAttribute("data-sound", `/sounds/Aile/${item.word.toLowerCase()}.mp3`);
+            card.setAttribute("data-sound", `sounds/Aile/${item.word.toLowerCase()}.mp3`);
                   // İçerik
                   card.innerHTML = `
                       <h3>${item.word}</h>
-                      <p>${item.description}</p>
+                 <p>${item.description}</p>
                   `;
                   
                   container.appendChild(card);
@@ -70,12 +68,12 @@
           // Kartları oluştur
           createCards("card-container-1", words1);
           createCards("card-container-2", words2);
-          createCards("card-container-3", words3);
+        createCards("card-container-3", words3);
       
           // Kart sıralamasını düzenle
           let topIndex1 = 0;
           let topIndex2 = 0;
-          let topIndex3 = 0;
+        let topIndex3 = 0;
       
           function arrangeCards(containerId, topIndex) {
               const cards = document.querySelectorAll(`#${containerId} .cardg`);

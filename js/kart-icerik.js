@@ -15,31 +15,36 @@
               buttonText.textContent = "🔊 Ses Dinle"; // Buton metnini değiştir
           }
       }
+
       const words1 = [
-      
-       
-          { word: "Tanrı", description: "Türklerin eski inançlarında en yüce varlık. Tanrı kelimesi, Türklerin gökyüzüyle ilişkilendirilen Tanrı’sıdır." },
-          { word: "Tengri", description: "Eski Türk inançlarında Gökyüzü Tanrısı. Doğada her şeyi yaratan yüce güç." },
-          { word: "Kut", description: "Tanrı'dan gelen kutsal güç, başarı ve iyilik. Tanrı tarafından verilen lütuf ve manevi güç." },
-          
-          
+        { word: "Otağ", description: "Ailenin yaşadığı büyük çadır, evin merkezi." },
+        { word: "Ev", description: "Yuva, aile bireylerinin yaşadığı yer. Türklerde ev ve aile sıkça eş anlamlı kullanılmıştır." },
+        { word: "Aile", description: "Çekirdek aileyi ifade eder. Divan’da bu kelime açıkça geçmez, ancak aile kavramı başka terimlerle ifade edilmiştir." },
+        { word: "Uluğ", description: "Büyük, ailenin büyüğü (genelde dede veya baba)." },
+        { word: "Eçe", description: "Anne, evin kadını." },
+        { word: "Oğul", description: "Ailenin erkek çocuğu." },
                         
           ];
       
           const words2 = [
-            { word: "İman", description: "İnanç, özellikle Tanrı'ya ya da bir dine duyulan güven ve inanç." },
-            { word: "Beylik", description: "Güçlü ve erdemli yönetici, eski Türk inançlarında Tanrı tarafından kutsanmış kişi." },
-            { word: "Kara (Kara Tengri)", description: "Kötü Tanrı veya olumsuz güç, eski Türk inançlarında negatif bir figür olarak görülür." },
-           
-            
+          { word: "Kız", description: "Ailenin kız çocuğu." },
+        { word: "Ata", description: "Baba veya dede; ailenin reisi." },
+        { word: "Ana", description: "Anne. Türklerde ailede önemli bir yer tutar." },
+        { word: "Karı", description: "Kadın, eş anlamında kullanılır." },
+        { word: "Er", description: "Erkek, koca veya aile reisi." },
+        { word: "Evlü", description: "Evli, aile kurmuş kişi anlamına gelir." },
+        { word: "Uruk", description: "Soy, nesil, aileden gelen kişiler." },
+        { word: "Er", description: "Erkek, koca veya aile reisi." },
                         
           ];
         const words3 = [
-
-          { word: "Ulu", description: "Yüce, kutsal, özellikle Tanrı’nın yüceliğini anlatan bir sıfat." },
-          { word: "Şaman", description: "Eski Türk inançlarında, ruhlarla iletişim kurabilen, hastalıkları tedavi edebilen ruhani lider." },
-          { word: "İyilik", description: "Doğru yolu takip etmek, Tanrı'nın emirlerine uymak, erdemli olmak." },
-          { word: "Gök Tanrı", description: "Eski Türklerin en yüksek Tanrı inancı, gökyüzüyle bağlantılı yüce Tanrı." },
+        { word: "Budun", description: "Kabile, ailelerin birleşiminden oluşan topluluk." },
+        { word: "Töre", description: "Aile içindeki düzeni ve ilişkileri belirleyen gelenek ve kurallar." },
+        { word: "Köngül", description: "Sevgi, aile içindeki bağlılığı ve duygusal bağı ifade eder." },
+        { word: "İnik", description: "Küçük kardeş ya da aile içindeki küçük birey." },
+        { word: "Kağan", description: "Ailenin lideri veya soyun başındaki kişi (ailelerin birleşimi bağlamında)." },
+        { word: "Yurt", description: "Ailelerin kurduğu yaşam alanı, aynı zamanda memleket anlamı taşır." },
+        { word: "İş", description: "Aile bireylerinin yaptığı işler, genelde ev içindeki görev dağılımını ifade eder." },
           ];
       
           // Kartları oluşturma fonksiyonu
@@ -51,11 +56,11 @@
                   card.classList.add("cardg");
                   card.style.setProperty("--order", index);
       
-            card.setAttribute("data-sound", `/sounds/inanç/${item.word.toLowerCase()}.mp3`);
+            card.setAttribute("data-sound", `sounds/Aile/${item.word.toLowerCase()}.mp3`);
                   // İçerik
                   card.innerHTML = `
                       <h3>${item.word}</h>
-                 <p>${item.description}</p>
+                      <p>${item.description}</p>
                   `;
                   
                   container.appendChild(card);
@@ -65,12 +70,12 @@
           // Kartları oluştur
           createCards("card-container-1", words1);
           createCards("card-container-2", words2);
-        createCards("card-container-3", words3);
+          createCards("card-container-3", words3);
       
           // Kart sıralamasını düzenle
           let topIndex1 = 0;
           let topIndex2 = 0;
-        let topIndex3 = 0;
+          let topIndex3 = 0;
       
           function arrangeCards(containerId, topIndex) {
               const cards = document.querySelectorAll(`#${containerId} .cardg`);
