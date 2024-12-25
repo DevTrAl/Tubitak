@@ -17,33 +17,29 @@
       }
 
       const words1 = [
-        { word: "Töre", description: "Gelenek ve göreneklerin genel adı; toplumsal düzeni sağlayan kurallar bütünü." },
-        { word: "Toy", description: "Şölen, ziyafet. Kutlama veya önemli günlerde yapılan geleneksel toplantılar." },
-        { word: "Saçı", description: "Tanrılara veya ruhlara adak olarak sunulan yiyecek veya armağan." },
-        { word: "Yas", description: "Cenaze törenleriyle ilgili gelenek; ölen kişi için tutulan matem." },
-        { word: "Kımız", description: "Törenlerde ve kutlamalarda içilen mayalanmış süt içeceği." },
-        { word: "Küden", description: "Meclis veya kurultay; devlet işlerinin görüşüldüğü geleneksel toplantı." },
+          { word: "Balık", description: "Şehir veya yerleşim yeri; genellikle bir boyun geleneksel merkezini ifade eder." },
+          { word: "Takı", description: "Düğün veya törenlerde gelin ve damada takılan hediyeler." }, 
+          { word: "İye", description: "Koruyucu ruh." }, 
+          
+  
                         
           ];
       
           const words2 = [
             { word: "Ongun", description: "Boyların kutsal kabul ettiği semboller; bir nevi totem." },
-            { word: "Yurt", description: "Toprak ve yaşam alanı; geleneksel olarak bir ailenin veya boyun bağlı olduğu yer." },
-            { word: "Balık", description: "Şehir veya yerleşim yeri; genellikle bir boyun geleneksel merkezini ifade eder." },
-            { word: "İye", description: "Koruyucu ruh; Türk inanç sisteminde doğa ve yerin kutsallığına dair bir kavram." },
-            { word: "Otağ", description: "Çadır, özellikle bey veya kağanın çadırı. Türk yaşamındaki önemli bir geleneksel unsur." },
-            { word: "Törüt", description: "Kutlama veya toplumsal ritüeller." },
-            { word: "Şaman", description: "Ruhani lider; dini törenleri ve geleneksel uygulamaları yöneten kişi." },
+            { word: "Yurt", description: "Toprak ve yaşam alanı; geleneksel olarak bir ailenin veya boyun bağlı olduğu yer." },            
+            { word: "İye", description: "Koruyucu ruh; Türk inanç sisteminde doğa ve yerin kutsallığına dair bir kavram." },           
+            { word: "Takı", description: "Düğün veya törenlerde gelin ve damada takılan hediyeler." }, 
+            { word: "Köç", description: "Göçebe yaşam tarzıyla ilgili gelenekler." },
                         
           ];
         const words3 = [
+         
           { word: "Barka", description: "Kurban kesme veya adak verme ritüelleri." },
           { word: "Uruk", description: "Soy, boy veya kabile anlamına gelir; soy bağlarına dayalı gelenekleri ifade eder." },
           { word: "Budun", description: "Toplum, millet veya halk; bir arada yaşayan insanların geleneklerine vurgu yapar." },
-          { word: "Kut", description: "Devletin veya bireyin ilahi bir güçten aldığı kutsallık. Geleneksel Türk inanç sisteminde önemli bir kavram." },
-          { word: "Köç", description: "Göçebe yaşam tarzıyla ilgili gelenekler." },
+          { word: "Kut", description: "Devletin veya bireyin ilahi bir güçten aldığı kutsallık. Geleneksel Türk inanç sisteminde önemli bir kavram." },  
           { word: "Süzük", description: "Eğlence ve şenlik anlamına gelir; sosyal geleneklerle bağlantılıdır." },
-          { word: "Takı", description: "Düğün veya törenlerde gelin ve damada takılan hediyeler." }, 
           ];
       
           // Kartları oluşturma fonksiyonu
@@ -122,4 +118,4 @@
           // Kartları düzenle
           arrangeCards("card-container-1", topIndex1);
           arrangeCards("card-container-2", topIndex2);
-        arrangeCards("card-container-3", topIndex3);
+          arrangeCards("card-container-3", topIndex3);
