@@ -30,7 +30,7 @@
         { word: "Bürünçük", description: "Burnu ve burundan aşağıyı örten yarım peçe." },
         { word: "Cekrek", description: "Kölelerin giydiği yünden yapılmış." },
         { word: "Cengü", description: "Küçük hırka." },
-        { word: "Didim", description: "Gerdek goes gelinin giydiği taç." },
+        { word: "Didim", description: "Gerdek gecesi gelinin giydiği taç." },
         { word: "Kerim", description: "Nakıs kumaş." },
         { word: "Kuyka", description: "Deri." },
                         
