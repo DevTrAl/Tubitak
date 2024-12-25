@@ -193,9 +193,7 @@ header .social-icon li a
 .navbar-default .navbar-nav > li > a.current {
 	color: #eb6a14;
 }
-.navbar-nav p{
-	font-size: 10px;
-}
+
 .templatemo-nav {
 	border-radius: 0;
 	width: 100%;
