@@ -206,14 +206,7 @@ header .social-icon li a
 /* end navigation */
 
 /* start home */
-#home
-	{
-		background: url('resim12345.jpg') no-repeat;
-		background-size: cover;
-		padding-top: 160px;
-		padding-bottom: 100px;
-		min-height: 850px;
-	}
+
 #home h1
 	{
 		font-weight: 300;
