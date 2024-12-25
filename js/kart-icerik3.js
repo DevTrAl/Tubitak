@@ -16,33 +16,31 @@
           }
       }
       const words1 = [
-        { word: "Otağ", description: "Ailenin yaşadığı büyük çadır, evin merkezi." },
-        { word: "Ev", description: "Yuva, aile bireylerinin yaşadığı yer. Türklerde ev ve aile sıkça eş anlamlı kullanılmıştır." },
-        { word: "Aile", description: "Çekirdek aileyi ifade eder. Divan’da bu kelime açıkça geçmez, ancak aile kavramı başka terimlerle ifade edilmiştir." },
-        { word: "Uluğ", description: "Büyük, ailenin büyüğü (genelde dede veya baba)." },
-        { word: "Eçe", description: "Anne, evin kadını." },
-        { word: "Oğul", description: "Ailenin erkek çocuğu." },
+        { word: "Eldiri", description: "Oglak derisi." },
+        { word: "Eteklik böz", description: "Etek yapmak icin kullanalan kumas." },
+        { word: "Xuln", description: "Degisik renklerde olan bir ipek." },
+        { word: "Kaçaç", description: "Bir in ipeklisi." },
+        { word: "Kedüklük", description: "Yagmurluk yapmak için malzeme." },
+        { word: "Kemei", description: "Pamuktan yapilan şeritli bir kumaş." },
                         
           ];
       
           const words2 = [
-          { word: "Kız", description: "Ailenin kız çocuğu." },
-        { word: "Ata", description: "Baba veya dede; ailenin reisi." },
-        { word: "Ana", description: "Anne. Türklerde ailede önemli bir yer tutar." },
-        { word: "Karı", description: "Kadın, eş anlamında kullanılır." },
-        { word: "Er", description: "Erkek, koca veya aile reisi." },
-        { word: "Evlü", description: "Evli, aile kurmuş kişi anlamına gelir." },
-        { word: "Uruk", description: "Soy, nesil, aileden gelen kişiler." },
+          { word: "Bork", description: "Başa giyilen şey." },
+        { word: "Bürünçük", description: "Burnu ve burundan aşağıyı örten yarım peçe." },
+        { word: "Cekrek", description: "Kölelerin giydiği yünden yapılmış." },
+        { word: "Cengü", description: "Küçük hırka." },
+        { word: "Didim", description: "Gerdek goes gelinin giydiği taç." },
+        { word: "Kerim", description: "Nakıs kumaş." },
+        { word: "Kuyka", description: "Deri." },
                         
           ];
         const words3 = [
-        { word: "Budun", description: "Kabile, ailelerin birleşiminden oluşan topluluk." },
-        { word: "Töre", description: "Aile içindeki düzeni ve ilişkileri belirleyen gelenek ve kurallar." },
-        { word: "Köngül", description: "Sevgi, aile içindeki bağlılığı ve duygusal bağı ifade eder." },
-        { word: "İnik", description: "Küçük kardeş ya da aile içindeki küçük birey." },
-        { word: "Kağan", description: "Ailenin lideri veya soyun başındaki kişi (ailelerin birleşimi bağlamında)." },
-        { word: "Yurt", description: "Ailelerin kurduğu yaşam alanı, aynı zamanda memleket anlamı taşır." },
-        { word: "İş", description: "Aile bireylerinin yaptığı işler, genelde ev içindeki görev dağılımını ifade eder." },
+        { word: "Loatay", description: "Etik/Etüke Ayakkab, edik, sizme." },
+        { word: "Mindatu:", description: "Ipek." },
+        { word: "Sulagu", description: "Bir Çin dokuma türünden elde edilen kürk." },
+        { word: "Agi", description: "İpek kumas." },
+       
           ];
       
           // Kartları oluşturma fonksiyonu
@@ -54,7 +52,7 @@
                   card.classList.add("cardg");
                   card.style.setProperty("--order", index);
       
-            card.setAttribute("data-sound", `sounds/Aile/${item.word.toLowerCase()}.mp3`);
+            card.setAttribute("data-sound", `sounds/giyim/${item.word.toLowerCase()}.mp3`);
                   // İçerik
                   card.innerHTML = `
                       <h3>${item.word}</h>
