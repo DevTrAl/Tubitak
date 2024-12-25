@@ -208,7 +208,7 @@ header .social-icon li a
 /* start home */
 #home
 	{
-		background-image: url("Yapanlar/Kaşgarlı\ Mahmut\ ve\ dlgt\ \(1\).jpg");
+		background: url('icerkik/eski-turklerde-ogus-1665753230562.jpg') no-repeat;
 		background-size: cover;
 		padding-top: 160px;
 		padding-bottom: 100px;
