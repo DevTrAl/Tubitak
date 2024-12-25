@@ -26,7 +26,7 @@
           ];
       
           const words2 = [
-          { word: "Bork", description: "Başa giyilen şey." },
+        { word: "Bork", description: "Başa giyilen şey." },
         { word: "Bürünçük", description: "Burnu ve burundan aşağıyı örten yarım peçe." },
         { word: "Cekrek", description: "Kölelerin giydiği yünden yapılmış." },
         { word: "Cengü", description: "Küçük hırka." },
